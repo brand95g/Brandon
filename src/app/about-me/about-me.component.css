@@ -5,35 +5,14 @@ img {
     border-radius: 50%;
 }
 
-#divider {
-    width: 50%;
+div {
+    background-color: white;
+    border: 3px;
+    border-color: lightgray;
+    box-shadow: gray;
 }
 
-.container {
-    max-width: 1335px;
-    margin: 0 auto;
-}
-
-.grid-row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-}
-
-.grid-item {
-    height: 550px;
-    flex-basis: 20%;
-    -ms-flex: auto;
-    width: 259px;
-    position: relative;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.first {
-    width: 20%;
-}
-
-.second {
-    width: 80%;
+mat-card {
+    text-align: center;
+    margin: 10px;
 }
