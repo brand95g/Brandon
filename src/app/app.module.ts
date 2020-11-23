@@ -7,6 +7,7 @@ import { MatToolbarModule,} from  '@angular/material/toolbar';
 import { MatButtonModule,} from  '@angular/material/button';
 import { MatSidenavModule,} from  '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatCardModule} from  '@angular/material/card'
 import { MatGridListModule } from '@angular/material/grid-list'
 import { AppRoutingModule } from './app-routing.module';
 import { MatIconModule } from '@angular/material/icon';
@@ -18,6 +19,7 @@ import { DemoComponent } from './demo/demo.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { GridColsDirective } from './grid-cols.directive';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { GridColsDirective } from './grid-cols.directive';
     MatIconModule,
     MatTabsModule,
     MatGridListModule,
+    MatCardModule,
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
