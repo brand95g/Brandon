@@ -13,13 +13,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatIconModule } from '@angular/material/icon';
 import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
-import { MatTabsModule} from '@angular/material/tabs'
+import { MatTabsModule } from '@angular/material/tabs';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { DemoComponent } from './demo/demo.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { GridColsDirective } from './grid-cols.directive';
-import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
