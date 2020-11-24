@@ -19,6 +19,7 @@ import { DemoComponent } from './demo/demo.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { GridColsDirective } from './grid-cols.directive';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { GridColsDirective } from './grid-cols.directive';
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
+    MatSnackBarModule,
     MatButtonModule,
     MatListModule,
     MatSidenavModule,
