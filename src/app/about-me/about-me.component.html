@@ -1,23 +1,57 @@
-<mat-grid-list cols="1" rowHeight="400px" gutterSize="100px">
+<mat-grid-list [gridCols]="{xs: 1, sm: 2, md: 2, lg: 2, xl: 2}" rowHeight="450px">
     <mat-grid-tile>
         <mat-card>
+            <mat-card-title>
+                Me
+            </mat-card-title>
             <mat-card-content>
-                <img id="profilePicture" src="https://storage.googleapis.com/my-app-bgaper/IMG_2163.jpg" />
+                <img id="profilePicture" src="https://storage.googleapis.com/my-app-bgaper/IMG_2163.jpg " />
                 <h3>My name is Brandon Gasper and I am learning how to code with Javascript and Angular</h3>
                 <hr/>
             </mat-card-content>
             <mat-card-footer>
-                <a target="_blank" href="https://www.linkedin.com/in/brandongasper/"><button mat-button>Linkedin</button></a>
+                <a target="_blank " href="https://www.linkedin.com/in/brandongasper/ "><button mat-button>Linkedin</button></a>
             </mat-card-footer>
         </mat-card>
     </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card>
+            <mat-card-title>
+                Education
+            </mat-card-title>
+            <mat-card-content>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/2560px-Youngstown_State_Penguins_logo.svg.png" /><br/>
+                <h3>I recieved my Bachelors degree in Busisness Admistrations from Youngstown State Univeristy.</h3>
+                <hr/>
+            </mat-card-content>
+            <mat-card-footer>
+                <a target="_blank " href="https://ysu.edu"><button mat-button>YSU</button></a>
+            </mat-card-footer>
+        </mat-card>
+    </mat-grid-tile>
+    <!-- 
+    <mat-grid-tile>
+        <mat-card>
+            <mat-card-title>
+                Contact Me
+            </mat-card-title>
+            <mat-card-content>
+                <img src="https://storage.googleapis.com/bg95-assets/Letter%20between%20friends.svg" /> <br>
+                <h3>Drop me a line by selecting contact me below. I'll get back to you as soon as possible.</h3>
+                <hr/>
+            </mat-card-content>
+            <mat-card-footer>
+                <a href="mailto:brandon@gasper.co"><button mat-button>Contact Me</button></a>
+            </mat-card-footer>
+        </mat-card>
+    </mat-grid-tile>
+    -->
 </mat-grid-list>
 
 
-
 <!-- 
-<mat-grid-list [gridCols]="{xs: 1, sm: 1, md: 2, lg: 3, xl: 3}" rowHeight="300px">
-    <mat-grid-tile><img id="profilePicture" src="https://storage.googleapis.com/my-app-bgaper/IMG_2163.jpg" /></mat-grid-tile>
+<mat-grid-list [gridCols]="{xs: 1, sm: 1, md: 2, lg: 3, xl: 3} " rowHeight="300px">
+    <mat-grid-tile><img id="profilePicture " src="https://storage.googleapis.com/my-app-bgaper/IMG_2163.jpg " /></mat-grid-tile>
     <mat-grid-tile>
         <p>My Name is Brandon Gasper</p>
     </mat-grid-tile>
