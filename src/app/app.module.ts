@@ -30,8 +30,10 @@ const config = {
   databaseURL: 'https://brandon-site-dbb3d-default-rtdb.firebaseio.com/',
   projectId: 'brandon-site-dbb3d',
   storageBucket: 'brandon-site-dbb3d.appspot.com',
-  messagingSenderId: '1019437698886'
+  messagingSenderId: '1019437698886',
+  measurementId: 'G-KS553EZSYW'
 };
+
 
 @NgModule({
   declarations: [
@@ -67,3 +69,4 @@ const config = {
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+ 
