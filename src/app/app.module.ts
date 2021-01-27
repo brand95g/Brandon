@@ -7,8 +7,9 @@ import { MatToolbarModule,} from  '@angular/material/toolbar';
 import { MatButtonModule,} from  '@angular/material/button';
 import { MatSidenavModule,} from  '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { MatCardModule} from  '@angular/material/card'
+import { MatCardModule} from  '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list'
+import {MatFormFieldModule} from '@angular/material/form-field';
 import { AppRoutingModule } from './app-routing.module';
 import { MatIconModule } from '@angular/material/icon';
 import { BlogComponent } from './blog/blog.component';
@@ -20,6 +21,17 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { GridColsDirective } from './grid-cols.directive';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+
+const config = {
+  apiKey: 'AIzaSyAJRtVDuUCaQ5_SS--DSOqYHBE3ajUQylU',
+  authDomain: 'brandon-site-dbb3d.firebaseapp.com',
+  databaseURL: 'https://brandon-site-dbb3d-default-rtdb.firebaseio.com/',
+  projectId: 'brandon-site-dbb3d',
+  storageBucket: 'brandon-site-dbb3d.appspot.com',
+  messagingSenderId: '1019437698886'
+};
 
 @NgModule({
   declarations: [
@@ -42,10 +54,13 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatIconModule,
     MatTabsModule,
     MatGridListModule,
+    MatFormFieldModule,
     MatCardModule,
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(config),
+    AngularFireAnalyticsModule,
     BrowserAnimationsModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
