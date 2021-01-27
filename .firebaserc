@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "brandon-site-dbb3d": {
+      "hosting": {
+        "my-app": [
+          "brandon-site-dbb3d"
+        ]
+      }
+    }
+  }
+}
