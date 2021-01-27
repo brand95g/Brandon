@@ -31,6 +31,7 @@ const config = {
   projectId: 'brandon-site-dbb3d',
   storageBucket: 'brandon-site-dbb3d.appspot.com',
   messagingSenderId: '1019437698886',
+  appId: '1:1019437698886:web:17777a3e16b3e836ffdf47',
   measurementId: 'G-KS553EZSYW'
 };
 
