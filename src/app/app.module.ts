@@ -22,7 +22,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { GridColsDirective } from './grid-cols.directive';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AngularFireModule } from '@angular/fire';
-import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFireAnalyticsModule, ScreenTrackingService} from '@angular/fire/analytics';
 
 const config = {
   apiKey: 'AIzaSyAJRtVDuUCaQ5_SS--DSOqYHBE3ajUQylU',
@@ -66,7 +66,7 @@ const config = {
     AngularFireAnalyticsModule,
     BrowserAnimationsModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [ScreenTrackingService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
