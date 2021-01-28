@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
+import { AngularFireAnalytics } from '@angular/fire/analytics';
 
 
 
@@ -11,7 +12,9 @@ import { TestBed } from '@angular/core/testing';
 
 export class ContactMeComponent implements OnInit {
 
-  constructor() { }
+  constructor(analytics: AngularFireAnalytics) { 
+    analytics.logEvent('Contact_Me');
+  }
   test() {
     console.log('You clicked the button.');
   }
