@@ -10,6 +10,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule} from  '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list'
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
 import { AppRoutingModule } from './app-routing.module';
 import { MatIconModule } from '@angular/material/icon';
 import { BlogComponent } from './blog/blog.component';
@@ -64,6 +66,8 @@ const config = {
     AppRoutingModule,
     AngularFireModule.initializeApp(config),
     AngularFireAnalyticsModule,
+    MatSelectModule,
+    MatInputModule,
     BrowserAnimationsModule
   ],
   providers: [ScreenTrackingService, {provide: LocationStrategy, useClass: HashLocationStrategy}],

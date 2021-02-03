@@ -4,12 +4,23 @@
             <mat-card-content>
                 <img src="https://storage.googleapis.com/bg95-assets/Letter%20between%20friends.svg" /> <br>
                 <h3>Drop me a line by selecting contact me below. I'll get back to you as soon as possible.</h3>
+                <form class="example-form" name="contact" method="POST" data-netlify="true">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Favorite food</mat-label>
+                        <input matInput placeholder="Ex. Pizza" value="Sushi">
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Leave a comment</mat-label>
+                        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                    </mat-form-field>
+                    <button mat-button>submit</button>
+                </form>
             </mat-card-content>
             <mat-card-footer>
                 <hr/>
                 <a (click)="test()" href="mailto:brandon@gasper.co"><button mat-button>Contact Me</button></a>
             </mat-card-footer>
-
         </mat-card>
     </mat-grid-tile>
 </mat-grid-list>
