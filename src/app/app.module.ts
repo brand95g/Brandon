@@ -10,6 +10,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule} from  '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list'
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
 import { AppRoutingModule } from './app-routing.module';
 import { MatIconModule } from '@angular/material/icon';
 import { BlogComponent } from './blog/blog.component';
@@ -23,6 +25,9 @@ import { GridColsDirective } from './grid-cols.directive';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAnalyticsModule, ScreenTrackingService} from '@angular/fire/analytics';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
+import { QuestionComponent } from './question/question.component'
 
 const config = {
   apiKey: 'AIzaSyAJRtVDuUCaQ5_SS--DSOqYHBE3ajUQylU',
@@ -44,7 +49,8 @@ const config = {
     DemoComponent,
     AboutMeComponent,
     ContactMeComponent,
-    GridColsDirective
+    GridColsDirective,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +70,10 @@ const config = {
     AppRoutingModule,
     AngularFireModule.initializeApp(config),
     AngularFireAnalyticsModule,
+    AngularFirestoreModule,
+    MatSelectModule,
+    MatInputModule,
+    FormsModule,
     BrowserAnimationsModule
   ],
   providers: [ScreenTrackingService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
