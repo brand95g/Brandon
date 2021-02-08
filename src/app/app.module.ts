@@ -25,6 +25,9 @@ import { GridColsDirective } from './grid-cols.directive';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAnalyticsModule, ScreenTrackingService} from '@angular/fire/analytics';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
+import { QuestionComponent } from './question/question.component'
 
 const config = {
   apiKey: 'AIzaSyAJRtVDuUCaQ5_SS--DSOqYHBE3ajUQylU',
@@ -46,7 +49,8 @@ const config = {
     DemoComponent,
     AboutMeComponent,
     ContactMeComponent,
-    GridColsDirective
+    GridColsDirective,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
@@ -66,8 +70,10 @@ const config = {
     AppRoutingModule,
     AngularFireModule.initializeApp(config),
     AngularFireAnalyticsModule,
+    AngularFirestoreModule,
     MatSelectModule,
     MatInputModule,
+    FormsModule,
     BrowserAnimationsModule
   ],
   providers: [ScreenTrackingService, {provide: LocationStrategy, useClass: HashLocationStrategy}],

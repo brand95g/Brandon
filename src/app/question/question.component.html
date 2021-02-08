@@ -1,0 +1,17 @@
+<div class="top"></div>
+<form #postForm="ngForm" (ngSubmit)="onCreatePost(postForm.value)">
+    <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter your name" class="form-control" name="name" ngModel required>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Enter your email" class="form-control" name="email" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Question</mat-label>
+        <textarea matInput placeholder="Ask your question" class="form-control" name="question" ngModel required></textarea>
+    </mat-form-field>
+    <button mat-button>submit</button>
+</form>
